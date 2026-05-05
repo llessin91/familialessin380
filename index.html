@@ -23,15 +23,24 @@
 <!-- ⬇️ SUBSTITUA O BLOCO ABAIXO PELAS SUAS CREDENCIAIS ⬇️ -->
 <!-- (Veja o passo 5 do TUTORIAL.md)                       -->
 <!-- =================================================== -->
-<script>
-  window.FIREBASE_CONFIG = {
-    apiKey: "SUA_API_KEY_AQUI",
-    authDomain: "SEU_PROJETO.firebaseapp.com",
-    projectId: "SEU_PROJETO_ID",
-    storageBucket: "SEU_PROJETO.appspot.com",
-    messagingSenderId: "SEU_SENDER_ID",
-    appId: "SEU_APP_ID"
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDw0kor0wIj64JxsQwoczOt4N0omPg1w04",
+    authDomain: "familialessin380.firebaseapp.com",
+    projectId: "familialessin380",
+    storageBucket: "familialessin380.firebasestorage.app",
+    messagingSenderId: "1041449438572",
+    appId: "1:1041449438572:web:98a3de9cf8fd20a6fff749"
   };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 </script>
 <!-- =================================================== -->
 <!-- ⬆️ FIM DA CONFIGURAÇÃO ⬆️                              -->
